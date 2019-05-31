@@ -1,0 +1,7 @@
+//VTOCLIST JOB  (123),CLASS=A,PRTY=15,NOTIFY=&SYSUID   
+//STEP1    EXEC PGM=IEHLIST                            
+//SYSPRINT DD   SYSOUT=*                               
+//DD2      DD   UNIT=3390,VOLUME=SER=VPWRKC,DISP=OLD   
+//SYSIN    DD   *                                      
+     LISTVTOC   FORMAT,VOL=3390=VPWRKC                 
+/*                                                     
