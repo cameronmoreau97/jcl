@@ -1,0 +1,9 @@
+//PRINTPDS JOB  (123),CLASS=A,PRTY=15,NOTIFY=&SYSUID     
+//STEP1    EXEC PGM=IEBPTPCH                             
+//SYSPRINT DD  SYSOUT=A                                  
+//SYSUT1   DD  DSNAME=MFAPP18.JCL.PROGRAMS,DISP=SHR      
+//SYSUT2   DD  SYSOUT=A                                  
+//SYSIN    DD  *                                         
+        PRINT  TOTCONV=XE,TYPORG=PO,STOPAFT=10           
+        TITLE  ITEM=('PRINT PDS - 10 RECS EACH MEM',20)  
+/*                                                       
