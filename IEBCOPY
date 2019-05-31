@@ -1,0 +1,8 @@
+//COPY001  JOB (123),CLASS=A,PRTY=15,NOTIFY=&SYSUID,    
+//             MSGCLASS=X,MSGLEVEL=(1,1)                
+//STEP1    EXEC PGM=IEBCOPY                             
+//SYSPRINT DD SYSOUT=*                                  
+//SYSUT1   DD DSN=MFAPP18.SOURCE.DATA,DISP=SHR,         
+//            VOL=SER=VPWRKC,UNIT=3390                  
+//SYSUT2   DD DSN=MFAPP12.COPY,DISP=(NEW,KEEP),         
+//            VOL=SER=VPWRKC,SPACE=(TRK,(5,1,2))        
