@@ -1,0 +1,9 @@
+ //IEBGEN01 JOB (1234),MSGCLASS=X,MSGLEVEL=(1,1),NOTIFY=&SYSUID,       
+ //             CLASS=A,PRTY=15                                        
+ //STEP01   EXEC PGM=IEBGENER                                          
+ //SYSIN    DD DUMMY                                                   
+ //SYSPRINT DD SYSOUT=*                                                
+ //SYSUT1   DD DSN=MFAPP18.SEQ.COPYTHIS,DISP=SHR                       
+ //SYSUT2   DD DSN=MFAPP18.SEQ.COPIED,DISP=(NEW,CATLG),UNIT=3390,      
+ //            VOL=SER=VPWRKC,SPACE=(TRK,(3,3))                        
+ 
